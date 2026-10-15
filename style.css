@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #1f2933;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #d4a017;
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #f0c040;
+}
+
+
+.banner {
+    background-color: #323f4b;
+    color: white;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.banner h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.tugma {
+    display: inline-block;
+    background-color: #d4a017;
+    color: #1f2933;
+    font-weight: bold;
+    padding: 12px 26px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tugma:hover {
+    background-color: #f0c040;
+}
+
+.sarlavha {
+    text-align: center;
+    color: #1f2933;
+    font-size: 30px;
+    margin: 50px 0 30px 0;
+}
+
+.sarlavha.oq {
+    color: white;
+}
+
+.kartalar {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.karta {
+    background-color: white;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #d4a017;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.karta h3 {
+    color: #1f2933;
+    margin-bottom: 8px;
+}
+
+.karta p {
+    margin-bottom: 10px;
+}
+
+.narx {
+    color: #d4a017;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nega {
+    background-color: #1f2933;
+    color: white;
+    padding: 10px 0 50px 0;
+}
+
+.nega ul {
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nega li {
+    margin-bottom: 10px;
+}
+
+.nega li::before {
+    content: "✔ ";
+    color: #d4a017;
+}
+
+.vaqt {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.vaqt p {
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.forma-quti {
+    background-color: white;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-top: 5px solid #d4a017;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.forma-quti h2 {
+    color: #1f2933;
+    margin-bottom: 10px;
+}
+
+.forma-quti p {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #d4a017;
+}
+
+form .tugma {
+    margin-top: 25px;
+    width: 100%;
+}
+
+footer {
+    background-color: #1f2933;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Telefon uchun */
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+}

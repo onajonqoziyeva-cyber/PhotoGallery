@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbatga yozilish - Usta Sartaroshxona</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Usta Sartaroshxona</h1>
+            <nav>
+                <a href="index.html">Bosh sahifa</a>
+                <a href="index.html#xizmatlar">Xizmatlar</a>
+                <a href="index.html#ish-vaqti">Ish vaqti</a>
+                <a href="navbat.html">Navbatga yozilish</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="forma-quti">
+            <h2>Navbatga yozilish</h2>
+            <p>Quyidagi ma'lumotlarni to'ldiring, biz sizga tez orada aloqaga chiqamiz.</p>
+
+            <form action="#" method="post">
+
+                <label for="ism">Ismingiz</label>
+                <input type="text" id="ism" name="ism" placeholder="Masalan: Aziz" required>
+
+                <label for="telefon">Telefon raqamingiz</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="+998 991234567" required>
+
+                <label for="xizmat">Xizmat turi</label>
+                <select id="xizmat" name="xizmat">
+                    <option>Soch olish</option>
+                    <option>Soqol olish</option>
+                    <option>Soch + soqol</option>
+                    <option>Bolalar soch olishi</option>
+                </select>
+
+                <label for="usta">Usta</label>
+                <select id="usta" name="usta">
+                    <option>Istalgan usta</option>
+                    <option>Jasur</option>
+                    <option>Bobur</option>
+                    <option>Sardor</option>
+                </select>
+
+                <label for="sana">Sana</label>
+                <input type="date" id="sana" name="sana" required>
+
+                <label for="vaqt">Vaqt</label>
+                <input type="time" id="vaqt" name="vaqt" required>
+
+                <label for="izoh">Qo'shimcha izoh</label>
+                <textarea id="izoh" name="izoh" rows="4" placeholder="Xohlagan soch turmagingiz haqida yozing..."></textarea>
+
+                <button type="submit" class="tugma">Yozilish</button>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
